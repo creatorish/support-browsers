@@ -1,0 +1,58 @@
+.support-browser:before,.support-browser:after{
+	content:"";
+	display:table;
+}
+.support-browser:after{
+	clear:both;
+}
+.support-browser {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	zoom:1;
+}
+.support-browser li {
+	float: left;
+	font-family: Arial;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	position: relative;
+}
+.support-browser li div {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.support-browser sub.version {
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 2px;
+	position: relative;
+	top: 12px;
+}
+
+.support-browser .IE {
+	background: url(images/ie.png) no-repeat;
+}
+.support-browser .Chrome {
+	background: url(images/chrome.png) no-repeat;
+}
+.support-browser .Safari {
+	background: url(images/safari.png) no-repeat;
+}
+.support-browser .Firefox {
+	background: url(images/firefox.png) no-repeat;
+}
+.support-browser .Opera {
+	background: url(images/opera.png) no-repeat;
+}
+.support-browser .iPhone {
+	background: url(images/iphone.png) no-repeat;
+}
+.support-browser .iPad {
+	background: url(images/ipad.png) no-repeat;
+}
+.support-browser .Android {
+	background: url(images/android.png) no-repeat;
+}
