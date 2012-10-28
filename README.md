@@ -4,7 +4,7 @@ jQuery Support Browser Plugin
 
 デモ
 ------
-<a href="http://dev.creatorish.com/demo/support-browsers/" target="_blank">http://dev.creatorish.com/demo/support-browsers/</a>
+http://dev.creatorish.com/demo/support-browsers/
 
 使い方
 ------
@@ -77,7 +77,7 @@ jQuery Support Browser Plugin
 Support Utiliy JSとの連携
 ------
 
-このプラグインは<a href="http://creatorish.com/lab/4151" target="http://creatorish.com/lab/4151">Support Utility JS</a>と連携することができます。
+このプラグインは[Support Utility JS](http://creatorish.com/lab/4151)と連携することができます。
 
 同ライブラリが読み込まれている場合、SupportBrowserは現在閲覧中のブラウザが
 指定した対応ブラウザかどうかのフラグを返します。
