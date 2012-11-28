@@ -6,7 +6,7 @@
  * Copyright 2012 creatorish.com
  * Author: yuu@creatorish
  * Site: http://creatorish.com
- * LastUpdate: 2012/08/28
+ * LastUpdate: 2012/11/22
  * HowToUse: http://creatorish.com/lab/4193
  * Required: jQuery
  * AddOn: Support Utility JS(http://creatorish.com/lab/)
@@ -31,7 +31,6 @@ $.fn.SupportBrowser = function() {
 			if (typeof($s) === "object") {
 				var browser = $s.vendor.browser.toLowerCase();
 				var supportBrowser = String(data[1]).toLowerCase();
-				
 				var flg = (browser === supportBrowser);
 				var version = $s.vendor.version;
 				if (supportBrowser === "android") {
@@ -54,12 +53,14 @@ $.fn.SupportBrowser = function() {
 								isSupport = true;
 							}
 						} else if (num.length === 2) {
-							if (num[0] && num[1]) {
-								if (num[0] <= parseFloat(version) && parseFloat(version) <= num[1]) {
+							var n0 = parseFloat(num[0]);
+							var n1 = parseFloat(num[1]);
+							if (!isNaN(n0) && !isNaN(n1)) {
+								if (n0 <= parseFloat(version) && parseFloat(version) <= n1) {
 									isSupport = true;
 								}
 							} else {
-								if (num[0] <= parseFloat(version)) {
+								if (n0 <= parseFloat(version)) {
 									isSupport = true;
 								}
 							}
